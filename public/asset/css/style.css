@@ -1,0 +1,105 @@
+.card-hover {
+    transition: 0.3s;
+}
+.card-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translate(5px, 10px)
+}
+
+.img {
+  position: relative;
+  height:600px;
+}
+
+.img::before {
+  content: "";
+  background-image: url('bg3.jpg');
+  height: 100%; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: 
+    brightness(35%)
+    blur(0px)
+    saturate(1)
+  ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.img .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+
+.nav-item .link-hover:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(171, 210, 255);
+  border-radius: 10px;
+}
+
+.text-bold{
+  font-weight: 900;
+}
+
+/* video */
+.video-container {
+    max-width: 800px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.arrow-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.left-arrow {
+    left: 15px;
+}
+.right-arrow {
+    right: 15px;
+}
+
+/* .center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+} */

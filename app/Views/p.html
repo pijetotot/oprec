@@ -1,0 +1,18 @@
+$rules = [
+    'thnKelulusan' => 'required|numeric|exact_length[4]|less_than_equal_to[' . date('Y') . ']|greater_than_equal_to[2015]',
+    // aturan lainnya...
+];
+
+$rules = [
+    'tglLahir' => 'required|valid_date',
+    // aturan lainnya...
+];
+
+$rules = [
+    'kelas' => 'required|in_list[A1,A2,A3,B1,B2]',
+    // validasi lainnya
+];
+
+$rules = [
+    'email' => 'required|valid_email|is_unique[tb_mhs.email]|max_length[255]',
+];
